@@ -2,67 +2,43 @@
 <%- include partials/main_nav.ejs %>
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>About Me</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-    .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  height: 25%;
-}
-.imgnew {
-  width: 500x;
-  height: 500px;
-}
-    </style>
-</head>
-
-<body>
-
-    <header>
-    <br>
-        <h1 style="text-align: center;">About Me</h1>
-       <br>
-    </header>
-   
-    <main class="container">
-          <img src="IMG_8125.jpg" class="center imgnew">
-          <br/>
-          <br/>
-          <div class="jumbotron">
-        <h2 id="title1">A little more about me : <a href="Resume.pdf" download="">Download Resume</a></h2> 
-        <p >
-        My name is Diwakar Vikram Singh and I have completed my graduation in electronic and communication engineering from Sharda University (India) in 2018.
-I have worked in a startup company(Appqik It Solutions & Technology Pvt. Ltd.) in India as a software developer for 2 years, my work was to develop iOS(apple)mobile application and maintain developed application's.Working in a startup was risk taking but it helped me to attain new skills at very less time  doing various tasks liking talking to client's directly solving their issues,taking care of premises , maintaining inventory.
- Currently I'm on a study visa in Canada and a student in Centennial college.
-        </p>
+    <body>
         
+        
+        <main class="jumbotron">
+        <header>
+            <h1 style="text-align: center;">About Me</h1>
+        </header>
+            <img src="/images/mynew.jpg" class="center imgnew1"><br/>
+            
+            <div>
+                <h2 id="title1">A little more about me : <a href="/documents/Resume.pdf" download="">Download Resume</a></h2> 
+            
+                <p>My name is Diwakar Vikram Singh and I have completed my graduation in electronic and communication engineering from Sharda University (India) in 2018.
+I have worked in a startup company(Appqik It Solutions & Technology Pvt. Ltd.) in India as a software developer for 2 years, my work was to develop iOS(apple)mobile application and maintain developed application's.Working in a startup was risk taking but it helped me to attain new skills at very less time  doing various tasks liking talking to client's directly solving their issues,taking care of premises , maintaining inventory.
+ Currently I'm on a study visa in Canada and a student in Centennial college.</p>
+            
+                <h3 id="edutitle">Where did I study?</h3>
+            
+                <ul id="listedu">
+                    <li class="uni">Centennial College 2021 - 2022:</li>
+                    <p class="ba">Software engineering</p>
+                    <li class="uni">Sharda University -  2014 -2018</li>
+                    <p class="ba">Electronic and Communication Engineering</p>
+                </ul>
 
-        <h3 id="edutitle">Where did I study?</h3>
-
-        <ul id="listedu">
-            <li class="uni">Centennial College 2021 - 2022:</li>
-            <p class="ba">Software engineering</p>
-            <li class="uni">Sharda University -  2014 -2018</li>
-            <p class="ba">Electronic and Communication Engineering</p>
-        </ul>
-
-        <h3 id="exptitle">Previos Work Experience : </h3>
-        <ul id="listexp">
-            <li class="uni2">Appqik It Solutions and Technology Pvt Ltd</li>
-                        <p class="ba2">Software Developer -iOS Mobile Application</p>
-    </div>
-    </main>
-
-</body>
-
+                <h3 id="exptitle">Previos Work Experience : </h3>
+            
+                <ul id="listexp">
+                    <li class="uni2">Appqik It Solutions and Technology Pvt Ltd</li>
+                    <p class="ba2">Software Developer -iOS Mobile Application Developer</p>
+            </div>
+        </main>
+        </body>
 </html>
 <%- include partials/bottom_nav.ejs %>
 <%- include partials/footer.ejs %>

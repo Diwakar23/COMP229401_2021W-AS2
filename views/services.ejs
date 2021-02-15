@@ -2,88 +2,41 @@
 <%- include partials/main_nav.ejs %>
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-
-tr, th, td {
-  border: 1px white;
-  text-align: left;
- padding: 50px;
-}
-
-
-table {
-  width: 100%;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 80%;
-    border-radius: 5px;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-img {
-    border-radius: 5px 5px 0 0;
-}
-
-.container {
-    padding: 2px 16px;
-}
-.imgnew {
-  width: 20rem;
-  height: 15rem;
-}
-
-</style>
-</head>
-<body>
-
-
-
-<main class="container">
- <div class="jumbotron">
- <h2 style="text-align: center;">Skill Set's</h2>
-
-
-<table>
-  <tr>
-    <td>
-        <div class="card"><img src="iOS.png" alt="iOS">
-            
-        </div>
-    </td>
-    <td>
-    <div class="card"><img src="sql.png" alt="sql" style="width:100%">
-            
-        </div>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <div class="card"><img src="git.png" alt="git" style="width:100%">
-            
-        </div>
-    </td>
-    <td>
-    <div class="card">
-    <img src="mysql.png" alt="Avatar" style="width:100%">
-            
-        </div>
-    </td>
-
-
-  </tr>
-</table>
-</div>
-</main>
-</body>
-
+    <body>
+        <main style="padding: 2px 16px;">
+            <div class="jumbotron">
+                <h2 style="text-align: center;">Skill Set's</h2>
+                
+                <table>
+                    <tr>
+                        <td>
+                            <div class="card">
+                                <img src="/images/ios.png" alt="iOS">
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="card">
+                                <img src="/images/sql.png" alt="sql" style="width:100%">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="card">
+                                <img src="/images/git.png" alt="git" style="width:100%">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="card">
+                                <img src="/images/mysql.png" alt="mysql" style="width:100%">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </body>
 </html>
 <%- include partials/bottom_nav.ejs %>
-
 <%- include partials/footer.ejs %>

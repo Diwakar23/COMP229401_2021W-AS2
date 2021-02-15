@@ -1,67 +1,30 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
 
-<style>
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Me</title>
+    </head>
 
-.button2 {background-color: #008CBA;} /* Blue */
-.button3 {background-color: #f44336;} /* Red */ 
-.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
-.button5 {background-color: #555555;} /* Black */
+    <body>
+        <main class="jumbotron">
+            <h1 style="text-align: center;">Welcome to Diwakar Vikram Singh Portfolio!</h1>
+            <h4>Hi ! I am Diwakar Vikram Singh, a passionate and hard-working Software Developer from Varanasi,India. I am looking for challenging role in a growing and ethical company. I have an academic experience with multiple frontend/backend technologies and frameworks having worked on a few projects. I am curious, energetic and believe in continuous growth. I might not be the best developer yet, but aim to be better. If you want to talk about animals, nature, tech or coronavirus, hit me up. If this sounds like somebody you want to work with, hit me up.</h4><br/><br/>
 
-.wrapper {
-    text-align: center;
-}
-</style>
-
- <main class="jumbotron">
- <!--<div class="jumbotron">
-  <h1 class="display-4">Welcome to <%=title  %> Page</h1>
+            <div class="container">
+                <h3 style="text-align: center;" >Site Map:</h3><br/>    
     
-</div class = "jumbotron"> -->
-    <h1 style="text-align: center;" >Welcome to Diwakar Vikram Singh Portfolio!</h1>
-
-    <h4>
-    Hi ! I am Diwakar Vikram Singh, a passionate and hard-working Software Developer from Varanasi,India. I am looking for challenging role in a growing and ethical company. I have an academic experience with multiple frontend/backend technologies and frameworks having worked on a few projects. I am curious, energetic and believe in continuous growth. I might not be the best developer yet, but aim to be better. If you want to talk about animals, nature, tech or coronavirus, hit me up. If this sounds like somebody you want to work with, hit me up.
-    </h4>
-
-<br/>
-<br/>
-<br/>
-<div class="container">
-<h3 style="text-align: center;" >Site Map:</h3>
-<br/>
-<br/>
-<br/>
-<div class="wrapper">
-<button class="button" onclick="document.location='/about'">About Me</button>
-<button class="button button2" onclick="document.location='/projects'">Projects</button>
-<button class="button button3" onclick="document.location='/services'">Services</button>
-
-<button class="button button5" onclick="document.location='/contact'">Contact Us</button>
- </div>
- </div>
- </main> 
-
-<!--<main class="main col-sm-12 col-md-9">-->
-
-   
-
-
-
-
+                <div class="wrapper">
+                    <button class="button" onclick="document.location='/about'">About Me</button>
+                    <button class="button button2" onclick="document.location='/projects'">Projects</button>
+                    <button class="button button3" onclick="document.location='/services'">Services</button>
+                    <button class="button button5" onclick="document.location='/contact'">Contact</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
 <%- include partials/bottom_nav.ejs %>
-
 <%- include partials/footer.ejs %>
 
