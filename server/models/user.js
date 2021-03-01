@@ -1,3 +1,8 @@
+//Created by Diwakar Singh
+//Section: 401
+//Roll No: 301185459
+//Assignment: 01
+
 // require modules for the User Model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
