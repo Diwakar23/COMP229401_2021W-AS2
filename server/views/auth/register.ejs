@@ -3,7 +3,7 @@
 
 
 
-<main class="container">
+<main class="jumbotron">
     <!-- Message Area -->
     <% if(messages.length > 0) {%>
         <div class="alert alert-danger">
@@ -44,16 +44,17 @@
                 </fieldset>
 
                 <fieldset class="form-group text-right">
-                    <input type="submit" class="btn btn-success" value="Register">
+                    <input type="submit" class="btn btn-success btn-lg btn-block" value="Register">
+                    <br>
                     <a href="/">
-                        <input type="button" class="btn btn-warning" value="Cancel">
+                        <input type="button" class="btn btn-warning btn-lg btn-block" value="Cancel">
                     </a>
                 </fieldset>
 
             </form>
         </div>
     </div>
-    
+
 </main>
 
 <%- include ../partials/bottom_nav.ejs %>
