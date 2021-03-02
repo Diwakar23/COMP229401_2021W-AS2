@@ -13,10 +13,10 @@ let mongoose = require('mongoose');
 // create a reference to the model
 
 let Contact = require('../models/contact');
-
+let sortCondition = {Name: 1};
 module.exports.displayContactList =  (req, res, next) => {
-    Contact.find((err, contactList) => {
-            if(err)
+    Contact.find((err, contactList) => {  
+      if(err)
    {
        return console.error(err);
    }
@@ -28,7 +28,7 @@ module.exports.displayContactList =  (req, res, next) => {
        displayName: req.user ? req.user.displayName : ''}) ;
        
    }
-}) ;
+}).sort(sortCondition);
 };
 module.exports.displayAddPage = (req, res, next) =>{
     res.render('contact/add', {title : 'Add Contact', 

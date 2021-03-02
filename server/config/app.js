@@ -16,9 +16,7 @@ let logger = require('morgan');
 let session = require('express-session');
 let passport = require('passport');
 
-/*let passportJWT = require('passport-jwt');
-let JWTStrategy = passportJWT.Strategy;
-let ExtractJWT = passportJWT.ExtractJwt; */
+
 
 let passportLocal = require('passport-local');
 let localStrategy = passportLocal.Strategy;
